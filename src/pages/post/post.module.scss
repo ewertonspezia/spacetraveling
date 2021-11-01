@@ -1,1 +1,42 @@
-// TODO
+.container {
+    img {
+        display: block;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+.post {
+    h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        display: flex;
+
+        div {
+            display: flex;   
+            flex-direction: row;
+            align-items: center;
+            margin: 1rem 0;
+    
+            .icon {
+                margin-right: 0.6rem;
+                color: var(--gray-300);
+            }
+    
+            & + div {
+                margin-left: 1rem;
+            }
+    
+            span {
+                color: var(--gray-300);
+            }
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+}
